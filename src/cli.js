@@ -1,4 +1,4 @@
 import readlineSync from 'readline-sync';
 
-const greeting = readlineSync.question('May I have your name? ');
-export default greeting;
+const playerName = readlineSync.question('May I have your name? ');
+export default playerName;
