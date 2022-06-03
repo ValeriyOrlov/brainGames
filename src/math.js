@@ -10,3 +10,28 @@ export const isEven = (num) => {
   }
   return false;
 };
+
+export const getOperation = () => {
+  const getNumOfOperation = getRandom(0, 2);
+  const operations = ['+', '-', '*'];
+  return operations[getNumOfOperation];
+};
+
+export const calc = (operand1, operand2, operation) => {
+  let result = 0;
+  switch (operation) {
+  case '+':
+    result = operand1 + operand2;
+    break;
+  case '-':
+    result = operand1 - operand2;
+    break;
+  case '*':
+    result = operand1 * operand2;
+    break;
+  case '/':
+    result = operand1 / operand2;
+    break;
+  }
+  return Math.ceil(result);
+};
