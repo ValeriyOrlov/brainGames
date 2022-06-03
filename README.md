@@ -4,4 +4,4 @@
 
 ### Games demonstrations:
 
-[BrainEven game demo](https://asciinema.org/a/R4WH7ekS4giOZEjiDnlF7eTEq)
+[BrainEven game demo](https://asciinema.org/a/3imEarKrKT6GAVjca03zAW0mx)
