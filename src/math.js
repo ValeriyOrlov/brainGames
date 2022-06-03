@@ -1,12 +1,12 @@
- export const getRandom = (min, max) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
+export const getRandom = (min, max) => {
+  const minCeil = Math.ceil(min);
+  const maxFloor = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloor - minCeil + 1)) + minCeil;
+};
 
 export const isEven = (num) => {
-    if (num % 2 === 0) {
-      return true;
-    }
-    return false;
-  };
+  if (num % 2 === 0) {
+    return true;
+  }
+  return false;
+};
