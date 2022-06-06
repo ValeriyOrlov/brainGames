@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 export const getRandom = (min, max) => {
   const minCeil = Math.ceil(min);
   const maxFloor = Math.floor(max);
@@ -33,4 +35,28 @@ export const calc = (operand1, operand2, operation) => {
       break;
   }
   return Math.ceil(result);
+};
+
+export const getDivisors = (num) => {
+  const divisors = [];
+  const iter = (acc) => {
+    if (acc > num / 2) {
+      return divisors;
+    }
+    if (num % acc === 0) {
+      divisors.push(acc);
+    }
+    return iter(acc + 1);
+  };
+  return iter(2);
+};
+
+export const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
+
+export const getGreatestCommonDivisor = (num1, num2) => {
+  const firstNumDivs = getDivisors(num1);
+  const secondNumDivs = getDivisors(num2);
+  const divisors = _.intersection(firstNumDivs, secondNumDivs);
+  const greatestCommonDivisor = getMaxOfArray(divisors);
+  return greatestCommonDivisor;
 };
