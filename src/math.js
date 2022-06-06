@@ -60,3 +60,15 @@ export const getGreatestCommonDivisor = (num1, num2) => {
   const greatestCommonDivisor = getMaxOfArray(divisors);
   return greatestCommonDivisor;
 };
+
+export const getArithmeticProgression = () => {
+  const step = getRandom(1, 5);
+  const firstNumber = getRandom(0, 50);
+  const result = [firstNumber];
+  for (let i = 0; i < 9; i += 1) {
+    const nextNumber = result[i] + step;
+    result.push(nextNumber);
+  }
+  const hideRandomNumber = result.splice(getRandom(0, 9), 1, '..');
+  return [result.join(' '), hideRandomNumber];
+};
