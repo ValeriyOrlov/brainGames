@@ -4,7 +4,7 @@ const rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const resultAndCorrectAnswer = () => {
     const question = getRandom(0, 100);
-    const correctAnswer = isEven(result) ? 'yes' : 'no';
+    const correctAnswer = isEven(question) ? 'yes' : 'no';
     return [question, correctAnswer];
 };
 
