@@ -72,3 +72,22 @@ export const getArithmeticProgression = () => {
   const hideRandomNumber = result.splice(getRandom(0, 9), 1, '..');
   return [result.join(' '), hideRandomNumber];
 };
+
+export const isPrime = (num) => {
+  const sqrt = Math.sqrt(num);
+  if (num <= 1) {
+    return false;
+  }
+  if (num === 2 || num === 3) {
+    return true;
+  }
+  if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  }
+  for (let i = 2; i <= sqrt; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
