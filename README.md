@@ -7,4 +7,5 @@
 [BrainEven game demo](https://asciinema.org/a/3imEarKrKT6GAVjca03zAW0mx)\
 [BrainCalc game demo](https://asciinema.org/a/iRpDaxuYe8m8bBI5G1z4UZBTC)\
 [BrainGCD game demo](https://asciinema.org/a/jbCDhHP9VUZyQudR7H9ozCyqP)\
-[BrainProgression demo](https://asciinema.org/a/CH48eACLLJvNc1SUzOnGh1vO0)
+[BrainProgression game demo](https://asciinema.org/a/CH48eACLLJvNc1SUzOnGh1vO0)\
+[BrainPrime game demo](https://asciinema.org/a/4F1ByPO7qlwQnDF0TpgLZ56xK)
