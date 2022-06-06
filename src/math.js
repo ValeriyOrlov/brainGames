@@ -40,7 +40,7 @@ export const calc = (operand1, operand2, operation) => {
 export const getDivisors = (num) => {
   const divisors = [];
   const iter = (acc) => {
-    if (acc > num / 2) {
+    if (acc > num) {
       return divisors;
     }
     if (num % acc === 0) {
