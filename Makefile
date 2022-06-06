@@ -13,6 +13,9 @@ brain-calc:
 brain-gcd:
 	node bin/brain-gcd.js
 
+brain-progressive:
+	node bin/brain-progression.js
+
 lint:
 	npx eslint .
 
