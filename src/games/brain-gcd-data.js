@@ -11,7 +11,6 @@ const resultAndCorrectAnswer = () => {
   if (correctAnswer === '-Infinity') {
     return resultAndCorrectAnswer();
   }
-  console.log(`correctAnswer is '${correctAnswer}' (only for demonstration)`);
   return [question, correctAnswer];
 };
 
