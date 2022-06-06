@@ -16,7 +16,7 @@ const letsPlay = (rule, resultAndCorrectAnswer) => {
         }
         console.log('Correct!');
     }
-    console.log(`Congratulations, ${getUserName}`);
+    console.log(`Congratulations, ${getUserName}!`);
 };
 
 export default letsPlay;
