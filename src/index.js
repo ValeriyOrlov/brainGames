@@ -11,7 +11,7 @@ const letsPlay = (rule, resultAndCorrectAnswer) => {
     const [question, correctAnswer] = resultAndCorrectAnswer();
     const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `);
 
- if (correctAnswer === userAnswer) {
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {
       return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${getUserName}!`);
