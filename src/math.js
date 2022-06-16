@@ -73,21 +73,20 @@ export const getArithmeticProgression = () => {
   return [result.join(' '), hideRandomNumber];
 };
 
-export const isPrime = (num) => {
-  const sqrt = Math.sqrt(num);
-  if (num <= 1) {
+export const isPrime = (number) => {
+  if (number < 2) {
     return false;
   }
-  if (num === 2 || num === 3) {
-    return true;
-  }
-  if (num % 2 === 0 || num % 3 === 0) {
-    return false;
-  }
-  for (let i = 2; i <= sqrt; i += 1) {
-    if (num % i === 0) {
+
+  let divider = 2;
+
+  while (divider <= number / 2) {
+    if (number % divider === 0) {
       return false;
     }
+
+    divider += 1;
   }
+
   return true;
 };
